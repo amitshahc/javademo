@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: portfolio-demo
+  profiles:
+    active: dev
+
+# Default logging
+logging:
+  level:
+    root: INFO
