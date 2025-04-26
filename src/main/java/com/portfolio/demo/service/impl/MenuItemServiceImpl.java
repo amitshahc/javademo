@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.portfolio.demo.dto.MenuItemDTO;
 import com.portfolio.demo.entity.MenuItem;
 import com.portfolio.demo.exception.ResourceNotFoundException;
-import com.portfolio.demo.repository.MenuItemReposiroty;
+import com.portfolio.demo.repository.MenuItemRepository;
 import com.portfolio.demo.service.MenuItemService;
 
 import lombok.Builder;
@@ -19,7 +19,7 @@ import lombok.RequiredArgsConstructor;
 @Builder
 public class MenuItemServiceImpl implements MenuItemService {
 
-	private final MenuItemReposiroty menuItemRepository;
+	private final MenuItemRepository menuItemRepository;
 
 	@Override
 	public MenuItemDTO createMenuItem(MenuItemDTO dto) {

@@ -80,11 +80,45 @@
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		<!-- Mockito for Unit Testing -->
+		<!-- JUnit 5 Jupiter API for writing tests -->
 		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <!-- latest stable -->
+		    <scope>test</scope>
+		</dependency>
+		
+		<!-- JUnit 5 Engine to actually run the tests -->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-engine</artifactId>
+		    
+		    <scope>test</scope>
+		</dependency>
+		
+		<!-- Mockito Extension for JUnit 5 -->
+		<dependency>
+		    <groupId>org.mockito</groupId>
+		    <artifactId>mockito-junit-jupiter</artifactId>
+		    <!-- latest stable -->
+		    <scope>test</scope>
+		</dependency>
+		<!-- dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
 			<scope>test</scope>
+		</dependency -->
+		<dependency>
+	        <groupId>org.mockito</groupId>
+	        <artifactId>mockito-junit-jupiter</artifactId>
+	        <scope>test</scope>
+	    </dependency>
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter</artifactId>
+		    <scope>test</scope>
 		</dependency>
+		
 		<!-- Thymeleaf (optional for web UI) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

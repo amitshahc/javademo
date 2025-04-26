@@ -37,6 +37,14 @@ public class User {
 	// You can also add roles/authorities in future
 	// e.g., private String role;
 
+	// Add this constructor (full argument constructor)
+	public User(Long id, String username, String password, Role role) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.role = role;
+	}
+
 //	public User() {
 //	}
 //
